@@ -1,0 +1,236 @@
+<MyLayout>
+
+    canvas.before:
+        Color:
+            rgba: (1,1,1,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    GridLayout:
+        size: root.width, root.height
+        cols: 1
+        rows: 3
+
+        Label:
+            text: "0"
+            font_size: 30
+            size_hint_y: .3
+            #size_hint: (1, .15)
+            #pos_hint: {'x': 0,'top':1}
+            text_size: self.size
+            halign: 'right'
+            background_color: (120/255, 199/255, 157/255, 1)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        TextInput:
+            #text: "0"
+            font_size: 65
+            halign: "right"
+            size_hint_y: .4
+            background_color: (0,0,0,0)
+
+        GridLayout:
+
+            cols: 4
+            rows: 5
+
+            Button:
+                id: clear
+                text: "C"
+                font_size: 25
+                color: (1,1,1,1)
+                background_color: (255/255, 69/255, 69/255, 1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+
+            Button:
+                id: roundBracket
+                text: "()"
+                font_size: 25
+                color: (115/255, 255/255, 152/255, 1)
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: delete
+                text: "DEL"
+                color: (255/255, 69/255, 69/255, 1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: divide
+                text: "÷"
+                font_size: 25
+                color: (115/255, 255/255, 152/255, 1)
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: seven
+                text: "7"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: eight
+                text: "8"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: nine
+                text: "9"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: multiply
+                text: "×"
+                font_size: 25
+                color: (115/255, 255/255, 152/255, 1)
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: four
+                text: "4"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: five
+                text: "5"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: six
+                text: "6"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: minus
+                text: "-"
+                font_size: 25
+                color: (115/255, 255/255, 152/255, 1)
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: one
+                text: "1"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: two
+                text: "2"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: three
+                text: "3"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: add
+                text: "+"
+                font_size: 25
+                color: (115/255, 255/255, 152/255, 1)
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: negative
+                text: "+/-"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: zero
+                text: "0"
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: dot
+                text: "."
+                color: (0,0,0,1)
+                font_size: 25
+                background_color: (1,1,1,1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+            Button:
+                id: equal
+                text: "="
+                font_size:25
+                color: (1,1,1,1)
+                background_color: (115/255, 255/255, 152/255, 1)
+                background_normal: ''
+                on_release: root.buttonAnimation(self)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
